@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "ericpridham/flow-opentracing-zipkin",
+    "description": " Zipkin client for Flow OpenTracing ",
     "keywords": [
-        ":vendor_name",
+        "ericpridham",
         "laravel",
-        ":package_slug"
+        "flow-opentracing-zipkin"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/ericpridham/flow-opentracing-zipkin",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Eric Pridham",
+            "email": "eric.pridham@hey.com",
             "role": "Developer"
         }
     ],
@@ -34,13 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "EricPridham\\FlowOpenTracingZipkin\\": "src",
+            "EricPridham\\FlowOpenTracingZipkin\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "EricPridham\\FlowOpenTracingZipkin\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -54,10 +54,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "EricPridham\\FlowOpenTracingZipkin\\FlowOpenTracingZipkinServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "FlowOpenTracingZipkin": "EricPridham\\FlowOpenTracingZipkin\\Facades\\FlowOpenTracingZipkin"
             }
         }
     },

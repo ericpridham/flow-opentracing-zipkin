@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace EricPridham\FlowOpenTracingZipkin\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class FlowOpenTracingZipkinCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'flow-opentracing-zipkin';
 
     public $description = 'My command';
 
