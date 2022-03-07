@@ -1,6 +1,6 @@
 {
     "name": "ericpridham/flow-opentracing-zipkin",
-    "description": " Zipkin client for Flow OpenTracing ",
+    "description": "Zipkin client for Flow OpenTracing",
     "keywords": [
         "ericpridham",
         "laravel",
@@ -17,8 +17,9 @@
     ],
     "require": {
         "php": "^8.0",
-        "spatie/laravel-package-tools": "^1.9.2",
-        "illuminate/contracts": "^9.0"
+        "illuminate/contracts": "~8|~9",
+        "jcchavezs/zipkin-opentracing": "^2.0",
+        "spatie/laravel-package-tools": "^1.9.2"
     },
     "require-dev": {
         "nunomaduro/collision": "^6.0",
@@ -49,7 +50,11 @@
         "test-coverage": "vendor/bin/pest --coverage"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
     },
     "extra": {
         "laravel": {
