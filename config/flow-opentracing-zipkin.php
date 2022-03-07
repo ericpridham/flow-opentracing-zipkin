@@ -1,5 +1,7 @@
 <?php
-// config for EricPridham/FlowOpenTracingZipkin
 return [
-
+    'serviceName' => 'flow-opentracing',
+    'scheme' => 'http',
+    'host' => 'zipkin',
+    'port' => '9411',
 ];
