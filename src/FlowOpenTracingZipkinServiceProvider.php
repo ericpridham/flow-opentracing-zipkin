@@ -2,9 +2,9 @@
 
 namespace EricPridham\FlowOpenTracingZipkin;
 
+use EricPridham\FlowOpenTracingZipkin\Commands\FlowOpenTracingZipkinCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use EricPridham\FlowOpenTracingZipkin\Commands\FlowOpenTracingZipkinCommand;
 
 class FlowOpenTracingZipkinServiceProvider extends PackageServiceProvider
 {

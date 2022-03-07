@@ -2,9 +2,9 @@
 
 namespace EricPridham\FlowOpenTracingZipkin\Tests;
 
+use EricPridham\FlowOpenTracingZipkin\FlowOpenTracingZipkinServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use EricPridham\FlowOpenTracingZipkin\FlowOpenTracingZipkinServiceProvider;
 
 class TestCase extends Orchestra
 {
