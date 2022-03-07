@@ -25,7 +25,7 @@ class FlowOpenTracingZipkinServiceProvider extends PackageServiceProvider
         $this->app->singleton(OTTracer::class, function ($app) {
             $endpoint = Endpoint::create(config('flow-opentracing-zipkin.serviceName'));
             $reporter = new Http([
-                'endpoint_url' => config('flow-opentracing-zipkin.scheme') . '://' . config('flow-opentracing-zipkin.host') . ':' . config('flow-opentracing-zipkin.port') . '/api/v2/spans'
+                'endpoint_url' => config('flow-opentracing-zipkin.scheme') . '://' . config('flow-opentracing-zipkin.host') . ':' . config('flow-opentracing-zipkin.port') . '/api/v2/spans',
             ]);
 
             $sampler = BinarySampler::createAsAlwaysSample();
@@ -38,5 +38,4 @@ class FlowOpenTracingZipkinServiceProvider extends PackageServiceProvider
             return new ZipkinTracer($tracing);
         });
     }
-
 }
