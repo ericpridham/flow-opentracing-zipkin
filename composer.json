@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": "^8.0",
-        "illuminate/contracts": "~8|~9",
+        "illuminate/contracts": "^8|^9|^10|^11",
         "jcchavezs/zipkin-opentracing": "^2.0",
         "spatie/laravel-package-tools": "^1.9.2"
     },
